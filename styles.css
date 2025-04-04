@@ -256,22 +256,19 @@ body {
 }
 
 .hero-content p {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
-    font-weight: 300;
+    font-size: clamp(1.2rem, 3vw, 2rem);
     margin-bottom: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    animation: fadeInUp 1.2s var(--transition-timing) 0.2s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    line-height: 1.6;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    animation: fadeInUp 1.2s var(--transition-timing);
+    letter-spacing: 1px;
+    line-height: 1.4;
+    opacity: 1;
+    transform: none;
     background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 200%;
-    animation: gradientShift 3s ease infinite, fadeInUp 1.2s var(--transition-timing) 0.2s;
+    animation: gradientShift 3s ease infinite;
 }
 
 .cta-button {
